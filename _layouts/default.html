@@ -29,7 +29,13 @@
       <div class="container">
         <h1>Lesly</h1>
          <h2>Testing Description</h2>
-
+        
+ <div class="container">
+      <section id="main_content">
+        {{ content }}
+      </section>
+    </div>
+        
         <section id="downloads">
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
@@ -40,12 +46,6 @@
       </div>
     
     </header>
-
-    <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
-    </div>
       
       
     {% if site.google_analytics %}
